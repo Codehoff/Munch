@@ -54,7 +54,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    'mongodb+srv://enno:enno@cluster0.nehex.mongodb.net/<dbname>?retryWrites=true&w=majority'
+    'mongodb+srv://enno:enno@cluster0.nehex.mongodb.net/cookbook?retryWrites=true&w=majority'
   )
   .then(result => {
     app.listen(8080);
